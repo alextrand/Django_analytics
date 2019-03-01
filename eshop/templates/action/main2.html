@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+
+{% block body %}
+{% for waiter in all_waiters %}
+<p>Сегодня {{ waiter.name }}
+    Работает в ресторане {{ waiter.restaurant.place.name }}
+    по адресу {{ waiter.restaurant.place.address }}
+
+
+    и он вам сможет дать
+<p>{% if waiter.restaurant.serves_hot_dogs %} Хотдоги {% endif %}</p>
+<p>{% if waiter.restaurant.serves_pizza %} Пиццу {% endif %}</p>
+
+<hr>
+{% endfor %}
+
+<hr>
+
+{% for place in all_places %}
+<p>{{ place.name }}</p>
+<p>{{ place.address }}</p>
+
+{% endfor %}
+{% endblock %}

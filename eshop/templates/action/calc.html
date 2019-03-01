@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+
+<h2>Калькулятор</h2>
+<form method="post">
+    {% csrf_token %}
+    <div>
+        <label for="first_number">Первое число:</label>
+        <input type="text" name="first_number" placeholder="First_number">
+    </div>
+    <div>
+        <label for="second_number">Второе число</label>
+        <input type="text" name="second_number" placeholder="Second_number">
+    </div>
+    <button type="submit">Рассчитать</button>
+</form>
+
+</body>
+</html>

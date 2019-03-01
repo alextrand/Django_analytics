@@ -1,0 +1,12 @@
+<!--{% extends 'index.html' %}-->
+
+<!--{% block body %}-->
+
+
+{% for match in matches %}
+    <p>{{ match.date }} - {{ match.champ }} - {{ match.team1 }} - {{ match.team2 }}</p>
+{% endfor %}
+
+
+
+<!--{% endblock %}-->
