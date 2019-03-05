@@ -1,12 +1,20 @@
-<!--{% extends 'index.html' %}-->
+{% extends 'index.html' %}
 
-<!--{% block body %}-->
+{% block body %}
 
 
+<div class="rest-item">
+    <form action="{% url 'matches:delete-all' %}" method="get">
+        <button class="btn btn-primary">Удалить все матчи</button>
+    </form>
+    <hr>
+</div>
 {% for match in matches %}
-    <p>{{ match.date }} - {{ match.champ }} - {{ match.team1 }} - {{ match.team2 }}</p>
+    <div>
+        <p>{{ match.date }} - {{ match.champ }} - {{ match.team1 }} - {{ match.team2 }}</p>
+        <hr>
+    </div>
 {% endfor %}
 
 
-
-<!--{% endblock %}-->
+{% endblock %}

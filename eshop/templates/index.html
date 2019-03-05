@@ -10,28 +10,12 @@
 
 {% include 'includes/header.html' %}
 
-<p>
-    <a href="/all_matches/">Все матчи</a>
-</p>
-
-<p>
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        <input type="file" name="document">
-        <button type="submit" name="upload_btn" value="Upload">Upload File</button>
-    </form>
-</p>
-
-<p>
-    <form method="get">
-        <button type="submit" name="delete_btn" value="Delete">Удалить все матчи</button>
-    </form>
-</p>
 
 {% block body %}
 
-
 {% endblock %}
+
+
 
 </body>
 </html>
