@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block title %} Registration new user {% endblock %}
+{% block body %}
+<form action="{% url 'register' %}" method="post">
+    <div class="form-group">
+        {% csrf_token %}
+        {% for field in form %}
+        {% if field.errors %}
+        <div class="alert alert-info" role="alert">
+            {{field.errors}}
+        </div>
+        {% endif %}
+        <div class="form-group">
+            <label for="">{{ field.label }}</label><br>
+            {{ field }}
+        </div>
+
+        {% endfor %}
+
+        <button type="submit" class="btn btn-success">Register</button>
+    </div>
+</form>
+{% endblock %}
+
