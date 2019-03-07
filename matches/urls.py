@@ -9,7 +9,8 @@ urlpatterns = [
     path('all_matches/', all_matches, name='all-matches'),
     path('load_excel/', load_excel, name='load-excel'),
     path('delete/', delete, name='delete-all'),
-    path('', Index.as_view(), name='index')
+    path('filters/', filters, name='filters'),
+    path('', index, name='index')
 ]
 
 
