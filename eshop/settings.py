@@ -40,8 +40,6 @@ INSTALLED_APPS = [
 ]
 
 CUSTOM_APPS = [
-    'action',
-    'products',
     'matches',
     'user_app'
 ]
