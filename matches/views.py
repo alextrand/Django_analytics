@@ -1,5 +1,5 @@
 # from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.core.files.storage import FileSystemStorage
 from django.views import View
 from .excel import excel_to_db
@@ -37,6 +37,9 @@ def index(request):
     ctx = {}
     return render(request, 'index.html', ctx)
 
+def add_match(request):
+    return redirect('/admin/matches/match/add/')
+
 
 def all_matches(request):
     ctx = {}
@@ -54,6 +57,8 @@ def filters(request):
             ctx['matches'] = Match.objects.filter(champ=country)
         if winner not in 'all':
             ctx['matches'] = Match.objects.filter(result=winner)
+        if country not in 'all' and winner not in 'all':
+            ctx['matches'] = Match.objects.filter(champ=country, result=winner)
         return render(request, 'matches/filters.html', ctx)
     return render(request, 'matches/filters.html', ctx)
 

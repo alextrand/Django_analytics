@@ -21,6 +21,10 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'matches:filters' %}" style="margin-left:20px">Filters<span class="sr-only">(current)</span></a>
           </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'matches:add-match' %}" style="margin-left:20px">Add Match<span class="sr-only">(current)</span></a>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="{% url 'logout' %}" style="margin-left:20px">Log out ({{ request.user.username }})</a>
           </li>

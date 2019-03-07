@@ -10,6 +10,7 @@ urlpatterns = [
     path('load_excel/', load_excel, name='load-excel'),
     path('delete/', delete, name='delete-all'),
     path('filters/', filters, name='filters'),
+    path('add_match/', add_match, name='add-match'),
     path('', index, name='index')
 ]
 

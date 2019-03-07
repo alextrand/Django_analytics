@@ -2,7 +2,7 @@
 
 {% block body %}
 
-<div class="rest-item" align="right">
+<div align="right">
     <form action="{% url 'matches:delete-all' %}" method="get">
         <button class="btn btn-danger">Удалить все матчи</button>
     </form>
@@ -27,7 +27,6 @@
         <th>kp_a</th>
         <th>sy_h</th>
         <th>sy_a</th>
-        <th>choise</th>
     </tr>
     {% for match in matches %}
     <tr class="br">
@@ -45,7 +44,6 @@
         <th>{{ match.kp_a }}</th>
         <th>{{ match.sy_h }}</th>
         <th>{{ match.sy_a }}</th>
-        <th><input type="checkbox"></th>
     </tr>
     {% endfor %}
 </table>
