@@ -47,7 +47,13 @@
         <th>{{ match.champ }}</th>
         <th>{{ match.team1 }}</th>
         <th>{{ match.team2 }}</th>
-        <th>{{ match.result }}</th>
+        {% if match.result == '1' %}
+        <th>Home</th>
+        {% elif match.result == '2' %}
+        <th>Away</th>
+        {% else %}
+        <th>Draw</th>
+        {% endif %}
     </tr>
     {% endfor %}
 </table>
