@@ -5,7 +5,7 @@
 <form class="form-inline" method="post">
     {% csrf_token %}
     <select class="form-control" id="Country" name="country" style="margin-left:15px">
-        <option value="england">England</option>
+        <option value="england" >England</option>
         <option value="england2">England 2</option>
         <option value="spain">Spain</option>
         <option value="netherlands">Netherlands</option>
@@ -31,7 +31,7 @@
 </form>
 
 <div class="col-sm-12" align="right" style="width:70%">
-    <h3 align="center">Football</h3>
+    <h4 align="center" style="color: blue">Football</h4>
     <table class="table table-striped table-bordered dataTable no-footer" cellpadding="3px"
            style="font-size:10pt">
     <tr class="br">
@@ -58,6 +58,7 @@
     {% endfor %}
 </table>
 </div>
+
 
 
 {% endblock %}

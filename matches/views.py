@@ -4,11 +4,22 @@ from django.views import View
 from .excel import excel_to_db
 import pandas as pd
 from .models import Match
+from django.core.paginator import Paginator
+from django.shortcuts import render
+
+
+def listing(request, matches):
+    # match_list = Match.objects.all()
+    paginator = Paginator(matches, 10)
+    page = request.GET.get('page')
+    matches = paginator.get_page(page)
+    return matches
 
 
 def index(request):
     ctx = {}
     return render(request, 'index.html', ctx)
+
 
 def add_match(request):
     return redirect('/admin/matches/match/add/')
@@ -16,7 +27,8 @@ def add_match(request):
 
 def all_matches(request):
     ctx = {}
-    ctx['matches'] = Match.objects.all()
+    matches = Match.objects.all()
+    ctx['matches'] = listing(request, matches)
     return render(request, 'matches/all_matches.html', ctx)
 
 
