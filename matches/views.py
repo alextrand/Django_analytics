@@ -35,6 +35,8 @@ def all_matches(request):
 def filters(request):
     ctx = {}
     ctx['matches'] = Match.objects.all()
+    ctx['country'] = ''
+    ctx['winner'] = ''
     if request.method == "POST":
         country = request.POST.get('country')
         winner = request.POST.get('winner')
@@ -44,6 +46,8 @@ def filters(request):
             ctx['matches'] = Match.objects.filter(result=winner)
         if country not in 'all' and winner not in 'all':
             ctx['matches'] = Match.objects.filter(champ=country, result=winner)
+        ctx['country'] = request.POST.get('country')
+        ctx['winner'] = request.POST.get('winner')
         return render(request, 'matches/filters.html', ctx)
     return render(request, 'matches/filters.html', ctx)
 

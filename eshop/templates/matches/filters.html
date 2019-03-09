@@ -5,22 +5,85 @@
 <form class="form-inline" method="post">
     {% csrf_token %}
     <select class="form-control" id="Country" name="country" style="margin-left:15px">
-        <option value="england" >England</option>
+        {% if country == 'england' %}
+        <option value="england" selected>England</option>
+        {% else %}
+        <option value="england">England</option>
+        {% endif %}
+
+        {% if country == 'england2' %}
+        <option value="england2" selected>England 2</option>
+        {% else %}
         <option value="england2">England 2</option>
+        {% endif %}
+
+        {% if country == 'spain' %}
+        <option value="spain" selected>Spain</option>
+        {% else %}
         <option value="spain">Spain</option>
+        {% endif %}
+
+        {% if country == 'netherlands' %}
+        <option value="netherlands" selected>Netherlands</option>
+        {% else %}
         <option value="netherlands">Netherlands</option>
+        {% endif %}
+
+        {% if country == 'germany' %}
+        <option value="germany" selected>Germany</option>
+        {% else %}
         <option value="germany">Germany</option>
+        {% endif %}
+
+        {% if country == 'germany2' %}
+        <option value="germany2" selected>Germany 2</option>
+        {% else %}
         <option value="germany2">Germany 2</option>
+        {% endif %}
+
+        {% if country == 'italy' %}
+        <option value="italy" selected>Italy</option>
+        {% else %}
         <option value="italy">Italy</option>
+        {% endif %}
+
+        {% if country == 'italy' %}
+        <option value="france" selected>France</option>
+        {% else %}
         <option value="france">France</option>
+        {% endif %}
+
+        {% if country == 'all' %}
+        <option value="all" selected>--all--</option>
+        {% else %}
         <option value="all">--all--</option>
+        {% endif %}
     </select>
 
     <select class="form-control" id="Winner" name="winner" style="margin-left:15px">
+        {% if winner == '1' %}
+        <option value="1" selected>Home</option>
+        {% else %}
         <option value="1">Home</option>
+        {% endif %}
+
+        {% if winner == 'x' %}
+        <option value="x" selected>Draw</option>
+        {% else %}
         <option value="x">Draw</option>
+        {% endif %}
+
+        {% if winner == '2' %}
+        <option value="2" selected>Away</option>
+        {% else %}
         <option value="2">Away</option>
+        {% endif %}
+
+        {% if winner == 'all' %}
+        <option value="all" selected>--all--</option>
+        {% else %}
         <option value="all">--all--</option>
+        {% endif %}
     </select>
 
     <div class="rest-item" align="right">
