@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e14fcca-3cd7-49b3-be8a-65a4bb2a5187" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eshop/templates/action/action.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eshop/templates/action/calc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eshop/templates/action/main2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eshop/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eshop/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eshop/templates/matches/filters.html" beforeDir="false" afterPath="$PROJECT_DIR$/eshop/templates/matches/filters.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eshop/templates/products/all_products.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eshop/templates/products/detail_view.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/matches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/matches/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/matches/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            <state relative-caret-position="289">
+              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -46,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filters.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="filters.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eshop/templates/matches/filters.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
-              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+            <state relative-caret-position="468">
+              <caret line="26" column="65" lean-forward="true" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
               <folding>
                 <element signature="n#style#0;n#select#0;n#form#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#select#1;n#form#0;n#!!top" expanded="true" />
@@ -176,8 +167,8 @@
         <option value="$PROJECT_DIR$/eshop/templates/matches/all_matches.html" />
         <option value="$PROJECT_DIR$/matches/urls.py" />
         <option value="$PROJECT_DIR$/eshop/templates/index.html" />
-        <option value="$PROJECT_DIR$/matches/views.py" />
         <option value="$PROJECT_DIR$/eshop/templates/matches/filters.html" />
+        <option value="$PROJECT_DIR$/matches/views.py" />
       </list>
     </option>
   </component>
@@ -327,7 +318,7 @@
     <frame x="67" y="32" width="1853" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1890411" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1890411" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -335,7 +326,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3295964" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2679372" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2679372" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -535,17 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eshop/templates/matches/all_matches.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eshop/templates/includes/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -567,20 +547,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/matches/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eshop/templates/matches/filters.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+        <state relative-caret-position="468">
+          <caret line="26" column="65" lean-forward="true" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
           <folding>
             <element signature="n#style#0;n#select#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#select#1;n#form#0;n#!!top" expanded="true" />
@@ -588,6 +558,27 @@
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eshop/templates/matches/all_matches.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matches/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>

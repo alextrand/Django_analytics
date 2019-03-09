@@ -9,7 +9,6 @@ from django.shortcuts import render
 
 
 def listing(request, matches):
-    # match_list = Match.objects.all()
     paginator = Paginator(matches, 10)
     page = request.GET.get('page')
     matches = paginator.get_page(page)
@@ -34,10 +33,12 @@ def all_matches(request):
 
 def filters(request):
     ctx = {}
-    ctx['matches'] = Match.objects.all()
-    ctx['country'] = ''
-    ctx['winner'] = ''
-    if request.method == "POST":
+    if request.method == 'GET':
+        ctx['matches'] = Match.objects.all()
+        ctx['country'] = ''
+        ctx['winner'] = ''
+        return render(request, 'matches/filters.html', ctx)
+    if request.method == 'POST':
         country = request.POST.get('country')
         winner = request.POST.get('winner')
         if country not in 'all':
@@ -49,7 +50,6 @@ def filters(request):
         ctx['country'] = request.POST.get('country')
         ctx['winner'] = request.POST.get('winner')
         return render(request, 'matches/filters.html', ctx)
-    return render(request, 'matches/filters.html', ctx)
 
 
 def load_excel(request):
